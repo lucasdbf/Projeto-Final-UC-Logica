@@ -56,3 +56,21 @@ Para apresentar o projeto com excelência, também foi desenvolvida uma **Landin
 ├── 📄 LICENSE                       # Licença MIT
 ├── 📄 ProjetoFinal.jar              # Arquivo executável do sistema pronto para uso
 └── 📄 README.md                     # Documentação do projeto
+```
+
+---
+
+## 💻 Como executar o projeto
+
+### 1. Visualizar a Landing Page
+Para ver a apresentação visual do projeto:
+- Acesse a pasta `Landing Page Projeto Final`.
+- Dê um duplo clique no arquivo `index.html` para abri-lo no seu navegador padrão.
+
+### 2. Executar o Sistema Java (.jar)
+Certifique-se de ter o **Java JRE/JDK 25.0.1** (ou compatível) instalado em sua máquina.
+- Baixe o arquivo `ProjetoFinal.jar` que está na raiz deste repositório.
+- Dê um duplo clique no arquivo `.jar`.
+- **Ou execute via terminal/CMD:**
+  ```bash
+  java -jar ProjetoFinal.jar
