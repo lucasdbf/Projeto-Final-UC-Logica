@@ -232,6 +232,25 @@ public class Principal {
 				return;
 			}
 
+			String[] nomesClientes = new String[listaClientes.size()];
+			for (int i = 0; i < listaClientes.size(); i++) {
+				nomesClientes[i] = "ID: " + listaClientes.get(i).getId() + " - " + listaClientes.get(i).getNome();
+			}
+			
+			String clienteAlteradoStr= (String) JOptionPane.showInputDialog(null, "Selecione o cliente para este pedido:",
+					"Clientes Disponíveis", JOptionPane.PLAIN_MESSAGE, favicon, nomesClientes, nomesClientes[0]);
+			if (clienteAlteradoStr == null)
+				return;
+
+			int idClienteAlterado = Integer.parseInt(clienteAlteradoStr.split(" ")[1]);
+			Cliente clienteAlterado = null;
+			for (Cliente c : listaClientes) {
+				if (c.getId() == idClienteAlterado) {
+					clienteAlterado = c;
+					break;
+				}
+			}
+			
 			String papelAlterado = (String) JOptionPane.showInputDialog(null, "Selecione o tipo de papel",
 					"Tipos de Papel", JOptionPane.PLAIN_MESSAGE, favicon, nomesPapel, pedidoAlterar.getNomePapel());
 			if (papelAlterado == null)
@@ -256,6 +275,7 @@ public class Principal {
 			double qntdFolhaAlterado = Math.ceil(qntdRotulosAlterado / rotulosPorFolhaAlterado);
 			double precoFinalAlterado = calcularPreco(tabelaPrecos[papelIndex], qntdFolhaAlterado);
 
+			pedidoAlterar.setCliente(clienteAlterado);
 			pedidoAlterar.setNomePapel(nomesPapel[papelIndex]);
 			pedidoAlterar.setAlturaRotulo(alturaRotuloAlterado);
 			pedidoAlterar.setLarguraRotulo(larguraRotuloAlterado);
