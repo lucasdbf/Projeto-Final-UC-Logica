@@ -1,107 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrintGest - Sistema de Gestão para Gráficas</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header id="header">
-        <div class="logo">Print<span>Gest</span></div>
-        <nav>
-            <ul>
-                <li><a href="#problema">O Problema</a></li>
-                <li><a href="#funcionalidades">Solução</a></li>
-                <li><a href="#bastidores">Tecnologia</a></li>
-            </ul>
-        </nav>
-        <a href="#bastidores" class="btn-cta">Ver Projeto</a>
+      <div class="logo">Print<span>Gest</span></div>
+      <nav>
+        <ul>
+          <li><a href="#problema">O Problema</a></li>
+          <li><a href="#funcionalidades">Solução</a></li>
+          <li><a href="#bastidores">Tecnologia</a></li>
+        </ul>
+      </nav>
+      <a
+        href="https://github.com/lucasdbf/Projeto-Final-UC-Logica.git"
+        class="btn-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Ver Projeto</a
+      >
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-text">
-                <h1>Diga adeus às tabelas de preço manuais.</h1>
-                <p>Orçamentos para rótulos em segundos. Um sistema direto ao ponto que automatiza o cálculo de impressão, gerencia clientes e otimiza o tempo da sua gráfica.</p>
-                <a href="#funcionalidades" class="btn-cta">Conhecer Funcionalidades</a>
-            </div>
-            <div class="hero-image">
-                <div class="mockup-box">
-                    <i class="fa-solid fa-calculator"></i>
-                    <h3>Motor de Cálculo Ativo</h3>
-                    <p class="mockup-text">
-                        Processando dimensões, tipos de papel e faixas de desconto em tempo real...
-                    </p>
-                </div>
-            </div>
-        </section>
+      <section id="hero">
+        <div class="hero-text">
+          <h1>Diga adeus às tabelas de preço manuais.</h1>
+          <p>
+            Orçamentos para rótulos em segundos. Um sistema direto ao ponto que
+            automatiza o cálculo de impressão, gerencia clientes e otimiza o
+            tempo da sua gráfica.
+          </p>
+          <a href="#funcionalidades" class="btn-cta"
+            >Conhecer Funcionalidades</a
+          >
+        </div>
+        <div class="hero-image">
+          <div class="hero-image">
+            <img
+              src="demonstracao.gif"
+              alt="Demonstração do PrintGest em funcionamento"
+              class="hero-gif"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section id="problema">
-            <h2 class="section-title">Calcular rótulos na mão custa tempo.</h2>
-            <p class="section-subtitle">A dor invisível que consome o lucro das gráficas.</p>
-            
-            <div class="problema-content">
-                <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>O Problema:</strong> Olhar tabelas de preço de papel, calcular área (altura x largura), prever o aproveitamento da folha e aplicar faixas de desconto por quantidade é um processo chato, demorado e sujeito a erros humanos.</p>
-            </div>
-        </section>
+      <section id="problema">
+        <h2 class="section-title">Calcular rótulos na mão custa tempo.</h2>
+        <p class="section-subtitle">
+          A dor invisível que consome o lucro das gráficas.
+        </p>
 
-        <section id="funcionalidades">
-            <h2 class="section-title">Acelere sua produção com inteligência</h2>
-            <p class="section-subtitle">Ferramentas focadas no que realmente importa para o dia a dia da gráfica.</p>
+        <div class="problema-content">
+          <p>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <strong>O Problema:</strong> Olhar tabelas de preço de papel,
+            calcular área (altura x largura), prever o aproveitamento da folha e
+            aplicar faixas de desconto por quantidade é um processo chato,
+            demorado e sujeito a erros humanos.
+          </p>
+        </div>
+      </section>
 
-            <div class="cards-container">
-                <div class="card">
-                    <i class="fa-solid fa-bolt"></i>
-                    <h3>Orçamento Inteligente</h3>
-                    <p>Insira tipo de papel, dimensões e quantidade. O sistema faz os cálculos complexos na hora.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-users"></i>
-                    <h3>Gestão de Clientes</h3>
-                    <p>CRUD completo para cadastrar e organizar o histórico de quem compra com você.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-box-open"></i>
-                    <h3>Gestão de Pedidos</h3>
-                    <p>Controle exato do que foi orçado, aprovado e enviado para a produção.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-id-badge"></i>
-                    <h3>Controle de Equipe</h3>
-                    <p>Gerenciamento simples e eficiente dos funcionários que operam sua gráfica.</p>
-                </div>
-            </div>
-        </section>
+      <section id="funcionalidades">
+        <h2 class="section-title">Acelere sua produção com inteligência</h2>
+        <p class="section-subtitle">
+          Ferramentas focadas no que realmente importa para o dia a dia da
+          gráfica.
+        </p>
 
-        <section id="bastidores">
-            <h2 class="section-title">Por baixo do capô</h2>
-            <p class="section-subtitle">Tecnologia e lógica robusta por trás da simplicidade.</p>
+        <div class="cards-container">
+          <div class="card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Orçamento Inteligente</h3>
+            <p>
+              Insira tipo de papel, dimensões e quantidade. O sistema faz os
+              cálculos complexos na hora.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Gestão de Clientes</h3>
+            <p>
+              CRUD completo para cadastrar e organizar o histórico de quem
+              compra com você.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Gestão de Pedidos</h3>
+            <p>
+              Controle exato do que foi orçado, aprovado e enviado para a
+              produção.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-id-badge"></i>
+            <h3>Controle de Equipe</h3>
+            <p>
+              Gerenciamento simples e eficiente dos funcionários que operam sua
+              gráfica.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <div class="code-box">
-                <p>/* Desenvolvimento Back-end */</p>
-                <p>&gt; Linguagem: Java</p>
-                <p>&gt; Paradigma: Orientação a Objetos (POO)</p>
-                <p>&gt; Lógica de Negócio: Algoritmo dinâmico para cálculo de faixas de preço por demanda e aproveitamento de material.</p>
-                <p>&gt; Operações: CRUD completo integrado.</p>
-                <p>&gt; Interface: JOptionPane (Foco em performance e lógica).</p>
-            </div>
-        </section>
+      <section id="bastidores">
+        <h2 class="section-title">Por baixo do capô</h2>
+        <p class="section-subtitle">
+          Tecnologia e lógica robusta por trás da simplicidade.
+        </p>
+
+        <div class="code-box">
+          <p>/* Desenvolvimento Back-end */</p>
+          <p>&gt; Linguagem: Java</p>
+          <p>&gt; Paradigma: Orientação a Objetos (POO)</p>
+          <p>
+            &gt; Lógica de Negócio: Algoritmo dinâmico para cálculo de faixas de
+            preço por demanda e aproveitamento de material.
+          </p>
+          <p>&gt; Operações: CRUD completo integrado.</p>
+          <p>&gt; Interface: JOptionPane (Foco em performance e lógica).</p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Desenvolvido como projeto para o curso Técnico de Desenvolvimento de Sistemas - SENAI.</p>
-        <p class="footer-copy">&copy; 2026 PrintGest. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido como projeto para o curso Técnico de Desenvolvimento de
+        Sistemas - SENAI.
+      </p>
+      <p class="footer-copy">
+        &copy; 2026 PrintGest. Todos os direitos reservados.
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
