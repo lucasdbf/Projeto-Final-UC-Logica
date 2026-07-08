@@ -143,28 +143,20 @@ section {
     justify-content: center;
 }
 
-/* Simulando uma ilustração com CSS */
-.mockup-box {
+/* ================= IMAGEM/GIF DA HERO SECTION ================= */
+.hero-gif {
     width: 100%;
-    max-width: 450px;
-    background: var(--white);
+    max-width: 550px;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(26, 86, 219, 0.1);
-    padding: 2rem;
-    text-align: center;
-    border-top: 6px solid var(--primary);
+    box-shadow: 0 20px 40px rgba(26, 86, 219, 0.15); /* Sombra azulada elegante */
+    border: 4px solid var(--white); /* Borda branca imitando um frame */
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.mockup-box i {
-    font-size: 4rem;
-    color: var(--secondary);
-    margin-bottom: 1rem;
-}
-
-.mockup-text {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-top: 10px;
+.hero-gif:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+    box-shadow: 0 25px 50px rgba(26, 86, 219, 0.25);
 }
 
 /* ================= O PROBLEMA ================= */
